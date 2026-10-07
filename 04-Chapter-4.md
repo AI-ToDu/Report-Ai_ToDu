@@ -277,9 +277,37 @@ A través del EventStorming a nivel de diseño, se identificaron las interdepend
 
 El Diagrama de Contexto (Nivel 1 C4) ilustra el sistema central en su ecosistema operativo. Está liderado por el Dueño/Administrador y el Operario de Almacén. Se integra con plataformas externas como SUNAT API, Email Gateway (SendGrid) y Pasarelas de Pago.
 
-<p align="center">
-  <img src="Images/Context-Diagram.png" width="800" alt="Diagrama de Contexto C4">
-</p>
+```mermaid
+flowchart TD
+    %% Actors
+    ADMIN(("<b>Dueño / Administrador</b><br/>[Person]<br/><i>Toma decisiones estratégicas, revisa<br/>rentabilidad y gestiona la MYPE</i>"))
+    OPERATOR(("<b>Operario de Almacén</b><br/>[Person]<br/><i>Registra ingresos, salidas, mermas<br/>y consolida despachos físicos</i>"))
+    
+    %% Core System
+    AITODU("<b>AI-ToDu System</b><br/>[Software System]<br/><i>Plataforma centralizada SaaS que unifica la gestión<br/>de inventario, ventas logísticas y alertas operativas</i>")
+    
+    %% External Systems
+    SUNAT["<b>SUNAT API</b><br/>[Software System]<br/><i>Servicio gubernamental para validación<br/>y emisión de comprobantes</i>"]
+    SENDGRID["<b>Email Gateway (SendGrid)</b><br/>[Software System]<br/><i>Servicio externo para envío de<br/>notificaciones preventivas</i>"]
+    PAYMENT["<b>Pasarela de Pagos</b><br/>[Software System]<br/><i>Procesa el cobro recurrente<br/>de suscripciones SaaS</i>"]
+    
+    %% Relationships
+    ADMIN -.->|"Supervisa métricas y<br/>administra cuenta"| AITODU
+    OPERATOR -.->|"Registra el control de<br/>operaciones físicas"| AITODU
+    
+    AITODU -.->|"Valida transacciones<br/>fiscales (JSON/HTTPS)"| SUNAT
+    AITODU -.->|"Delega envío de<br/>correos (HTTPS)"| SENDGRID
+    AITODU -.->|"Delega cobros<br/>recurrentes (HTTPS)"| PAYMENT
+    
+    %% C4 Model Styling
+    classDef person fill:#08427b,stroke:#052e56,color:#ffffff,stroke-width:2px
+    classDef system fill:#1168bd,stroke:#0b4884,color:#ffffff,rx:10px,ry:10px,stroke-width:2px
+    classDef external fill:#999999,stroke:#6b6b6b,color:#ffffff,rx:10px,ry:10px,stroke-width:2px
+    
+    class ADMIN,OPERATOR person
+    class AITODU system
+    class SUNAT,SENDGRID,PAYMENT external
+```
 
 ### 4.6.3. Software Architecture Container Diagrams
 
@@ -289,17 +317,108 @@ El Diagrama de Contenedores (Nivel 2 C4) expone las unidades de ejecución y des
 * **Backend API:** Desarrollado en **Java 17 con Spring Boot** bajo arquitectura DDD. Procesa peticiones autenticadas vía JWT.
 * **Database:** **PostgreSQL** para persistir el registro transaccional bajo garantías ACID.
 
-<p align="center">
-  <img src="Images/Container-Diagram.png" width="800" alt="Diagrama de Contenedores C4">
-</p>
+```mermaid
+flowchart TD
+    %% Actors
+    ADMIN(("<b>Dueño / Administrador</b><br/>[Person]"))
+    OPERATOR(("<b>Operario de Almacén</b><br/>[Person]"))
+    VISITOR(("<b>Visitante MYPE</b><br/>[Person]"))
+
+    %% Boundary
+    subgraph SYSTEM_BOUNDARY ["AI-ToDu Architecture"]
+        direction TB
+        LANDING("<b>Landing Page</b><br/>[Container: Vercel / Netlify]<br/><i>Servidor de archivos estáticos que entrega<br/>la página web promocional B2B.</i>")
+        WEBAPP("<b>Web Application</b><br/>[Container: Firebase / Vercel]<br/><i>Servidor encargado de distribuir los<br/>artefactos estáticos (HTML/CSS/JS).</i>")
+        SPA("<b>Single-Page Application</b><br/>[Container: Angular, TypeScript]<br/><i>App interactiva en el navegador que consume<br/>el Backend RESTful.</i>")
+        API("<b>Backend API RESTful</b><br/>[Container: Java 17, Spring Boot]<br/><i>Procesa lógica de negocio DDD,<br/>auth JWT y expone servicios.</i>")
+        DB[("<b>Database</b><br/>[Container: PostgreSQL]<br/><i>Almacena datos transaccionales bajo<br/>esquema Multi-Tenant y ACID.</i>")]
+    end
+
+    %% External Systems
+    SUNAT["<b>SUNAT API</b><br/>[Software System]"]
+    SENDGRID["<b>Email Gateway</b><br/>[Software System]"]
+
+    %% Relationships
+    VISITOR -.->|"Visita para conocer<br/>los planes"| LANDING
+    ADMIN -.->|"Gestiona negocio y<br/>rentabilidad"| SPA
+    OPERATOR -.->|"Controla inventario<br/>físico"| SPA
+    
+    SPA -.->|"Descarga bundle<br/>estático (HTTPS)"| WEBAPP
+    SPA -.->|"Consume endpoints<br/>(JSON/HTTPS)"| API
+    
+    API -.->|"Lee/Persiste estado<br/>(JDBC/JPA)"| DB
+    API -.->|"Valida facturación"| SUNAT
+    API -.->|"Dispara notificaciones"| SENDGRID
+
+    %% Styling
+    classDef person fill:#08427b,stroke:#052e56,color:#ffffff,stroke-width:2px
+    classDef container fill:#438dd5,stroke:#2e6295,color:#ffffff,rx:10px,ry:10px,stroke-width:2px
+    classDef database fill:#438dd5,stroke:#2e6295,color:#ffffff,stroke-width:2px
+    classDef external fill:#999999,stroke:#6b6b6b,color:#ffffff,rx:10px,ry:10px,stroke-width:2px
+    classDef boundary fill:none,stroke:#444444,stroke-width:2px,stroke-dasharray: 5 5
+
+    class ADMIN,OPERATOR,VISITOR person
+    class LANDING,WEBAPP,SPA,API container
+    class DB database
+    class SUNAT,SENDGRID external
+    class SYSTEM_BOUNDARY boundary
+```
 
 ### 4.6.4. Software Architecture Components Diagrams
 
 El Diagrama de Componentes (Nivel 3 C4) descompone el contenedor del **Backend API (Spring Boot)**. Muestra los módulos cohesivos: *IAM Module, Warehouse Module, Sales Module, Logistics Module* y la capa de *Shared Infrastructure* apoyada en **Spring Data JPA**.
 
-<p align="center">
-  <img src="Images/Component-Diagram.png" width="800" alt="Diagrama de Componentes C4">
-</p>
+```mermaid
+flowchart TD
+    %% External Containers
+    SPA("<b>Single-Page Application</b><br/>[Container: Angular]<br/><i>Interfaz gráfica del usuario</i>")
+    DB[("<b>Database</b><br/>[Container: PostgreSQL]<br/><i>Persistencia centralizada</i>")]
+    EXTERNAL["<b>Sistemas Externos</b><br/>[Software Systems]<br/><i>SUNAT, SendGrid, etc.</i>"]
+
+    %% Boundary
+    subgraph API_BOUNDARY ["Backend API RESTful (Java / Spring Boot)"]
+        direction TB
+        IAM("<b>IAM & Security Module</b><br/>[Component: Spring Security, JWT]<br/><i>Gestiona identidad (Tenants) y<br/>autorización por roles.</i>")
+        WAREHOUSE("<b>Warehouse Module</b><br/>[Component: Spring @Service]<br/><i>Reglas de dominio para inventario,<br/>SKUs y movimientos (Core).</i>")
+        COMMERCIAL("<b>Commercial Module</b><br/>[Component: Spring @Service]<br/><i>Procesa transacciones de ventas<br/>y asociación con clientes.</i>")
+        LOGISTICS("<b>Logistics Module</b><br/>[Component: Spring @Service]<br/><i>Gestiona manifiestos, asignación<br/>de choferes e incidencias.</i>")
+        REPORTING("<b>Reporting & Alerts Module</b><br/>[Component: Spring @Service]<br/><i>Agrega métricas para el Dashboard<br/>y dispara alertas automáticas.</i>")
+        JPA("<b>Shared Infrastructure</b><br/>[Component: Spring Data JPA]<br/><i>Capa de abstracción ORM para<br/>el mapeo objeto-relacional.</i>")
+    end
+
+    %% Relationships
+    SPA -.->|"Peticiones HTTP con<br/>Bearer Token"| IAM
+    
+    IAM -.->|"Rutea auth"| WAREHOUSE
+    IAM -.->|"Rutea auth"| COMMERCIAL
+    IAM -.->|"Rutea auth"| LOGISTICS
+    IAM -.->|"Rutea auth"| REPORTING
+    
+    COMMERCIAL -.->|"Valida y descuenta<br/>inventario físico"| WAREHOUSE
+    
+    WAREHOUSE -.->|"Solicita persistencia"| JPA
+    COMMERCIAL -.->|"Solicita persistencia"| JPA
+    LOGISTICS -.->|"Solicita persistencia"| JPA
+    REPORTING -.->|"Consultas / Agregaciones"| JPA
+    
+    COMMERCIAL -.->|"Emite comprobantes"| EXTERNAL
+    REPORTING -.->|"Notifica correos"| EXTERNAL
+    
+    JPA -.->|"Ejecuta Queries y<br/>Transacciones (JDBC)"| DB
+
+    %% Styling
+    classDef container fill:#438dd5,stroke:#2e6295,color:#ffffff,rx:10px,ry:10px,stroke-width:2px
+    classDef component fill:#85bbf0,stroke:#5d82a8,color:#000000,rx:10px,ry:10px,stroke-width:2px
+    classDef database fill:#438dd5,stroke:#2e6295,color:#ffffff,stroke-width:2px
+    classDef external fill:#999999,stroke:#6b6b6b,color:#ffffff,rx:10px,ry:10px,stroke-width:2px
+    classDef boundary fill:none,stroke:#444444,stroke-width:2px,stroke-dasharray: 5 5
+
+    class SPA container
+    class IAM,WAREHOUSE,COMMERCIAL,LOGISTICS,REPORTING,JPA component
+    class DB database
+    class EXTERNAL external
+    class API_BOUNDARY boundary
+```
 
 <div style="page-break-after: always"></div>
 
@@ -314,9 +433,181 @@ Los Diagramas de Clases UML para los Bounded Contexts principales en Spring Boot
 * **Logistics Context:** La clase `ShipmentManifest` es el Aggregate Root. Contiene a `IoTTelemetry` como un *Value Object* inmutable sin ID propio.
 * **Billing Context:** La clase `CommercialTransaction` almacena una referencia lógica (`linkedManifestId`) en lugar de un acoplamiento directo de objeto para mantener la independencia del módulo.
 
-<p align="center">
-  <img src="Images/Class-Diagrams.jpg" width="800" alt="Diagramas de Clases UML">
-</p>
+```mermaid
+classDiagram
+    %% ==========================================
+    %% IAM / SAAS MODULE
+    %% ==========================================
+    namespace IamAndSaas {
+        class Tenant {
+            -UUID id
+            -String name
+            -String ruc
+            -UUID subscriptionPlanId
+            +changeSubscription(UUID planId) void
+            +updateDetails(String name, String ruc) void
+        }
+
+        class SubscriptionPlan {
+            -UUID id
+            -String name
+            -BigDecimal price
+            -Integer maxUsers
+        }
+
+        class User {
+            -UUID id
+            -UUID tenantId
+            -Integer roleId
+            -String fullName
+            -String email
+            +assignRole(Integer roleId) void
+        }
+
+        class Role {
+            -Integer id
+            -String name
+        }
+    }
+
+    %% ==========================================
+    %% INVENTORY MODULE (CORE)
+    %% ==========================================
+    namespace Inventory {
+        class InventoryItem {
+            <<Aggregate Root>>
+            -UUID id
+            -UUID tenantId
+            -UUID categoryId
+            -String sku
+            -Integer quantity
+            -BigDecimal unitPrice
+            +addStock(Integer amount) void
+            +decreaseStock(Integer amount) void
+            +updatePrice(BigDecimal newPrice) void
+        }
+
+        class Category {
+            -UUID id
+            -UUID tenantId
+            -String name
+        }
+
+        class StockMovement {
+            -UUID id
+            -UUID inventoryItemId
+            -UUID userId
+            -String movementType
+            -Integer quantity
+            -String reason
+        }
+    }
+
+    %% ==========================================
+    %% COMMERCIAL MODULE
+    %% ==========================================
+    namespace Commercial {
+        class Sale {
+            <<Aggregate Root>>
+            -UUID id
+            -UUID tenantId
+            -UUID customerId
+            -UUID userId
+            -BigDecimal totalAmount
+            -String status
+            -List~SaleDetail~ details
+            +addDetail(UUID itemId, Integer qty, BigDecimal price) void
+            +calculateTaxes() BigDecimal
+            +confirmSale() void
+        }
+
+        class SaleDetail {
+            -UUID id
+            -UUID saleId
+            -UUID inventoryItemId
+            -Integer quantity
+            -BigDecimal unitPrice
+            +getSubtotal() BigDecimal
+        }
+
+        class Customer {
+            -UUID id
+            -UUID tenantId
+            -String name
+            -String contactInfo
+        }
+    }
+
+    %% ==========================================
+    %% LOGISTICS MODULE
+    %% ==========================================
+    namespace Logistics {
+        class Dispatch {
+            <<Aggregate Root>>
+            -UUID id
+            -UUID tenantId
+            -UUID driverId
+            -UUID userId
+            -String status
+            -List~DispatchSale~ dispatchSales
+            +assignDriver(UUID driverId) void
+            +completeDispatch() void
+        }
+
+        class DispatchSale {
+            -UUID dispatchId
+            -UUID saleId
+        }
+
+        class Driver {
+            -UUID id
+            -UUID tenantId
+            -String name
+            -String license
+        }
+
+        class DispatchIncident {
+            -UUID id
+            -UUID dispatchId
+            -String description
+            -LocalDateTime occurredAt
+        }
+    }
+
+    %% ==========================================
+    %% ALERTS MODULE
+    %% ==========================================
+    namespace Alerts {
+        class Notification {
+            -UUID id
+            -UUID tenantId
+            -UUID userId
+            -String message
+            -Boolean isRead
+            +markAsRead() void
+        }
+    }
+
+    %% Compositions (Aggregates)
+    Sale *-- "1..*" SaleDetail : contains
+    Dispatch *-- "1..*" DispatchSale : groups
+    Dispatch *-- "0..*" DispatchIncident : records
+    
+    %% Associations
+    Tenant "1" --> "*" User : has
+    Tenant "1" --> "*" InventoryItem : owns
+    SubscriptionPlan "1" --> "*" Tenant : grants
+    Role "1" --> "*" User : assigns
+    
+    InventoryItem "1" --> "*" StockMovement : tracks
+    Category "1" --> "*" InventoryItem : categorizes
+    
+    SaleDetail "0..*" --> "1" InventoryItem : references
+    Customer "1" --> "*" Sale : makes
+    
+    Dispatch "1" --> "*" Driver : executes
+    DispatchSale "*" --> "1" Sale : assigned_to
+```
 
 ## 4.8. Database Design
 
@@ -329,6 +620,83 @@ Mapeado mediante **Spring Data JPA**, el ERD refleja:
 * **Esquema LOGISTICS:** Tabla `shipment_manifests`. Atributos de Value Objects se aplana mediante la anotación `@Embedded`.
 * **Esquema BILLING:** Tabla `commercial_transactions` incluye `linked_manifest_id` como referencia lógica al despacho.
 
-<p align="center">
-  <img src="Images/Database-Diagram.png" width="800" alt="Diagrama de Base de Datos ERD">
-</p>
+```mermaid
+erDiagram
+    %% SaaS & Security Module
+    TENANTS ||--o{ USERS : has
+    SUBSCRIPTION_PLANS ||--o{ TENANTS : grants
+    ROLES ||--o{ USERS : assigns
+
+    %% Inventory Module
+    TENANTS ||--o{ INVENTORY_ITEMS : owns
+    TENANTS ||--o{ CATEGORIES : owns
+    CATEGORIES ||--o{ INVENTORY_ITEMS : categorizes
+    INVENTORY_ITEMS ||--o{ STOCK_MOVEMENTS : tracks
+    USERS ||--o{ STOCK_MOVEMENTS : registers
+
+    %% Commercial Module
+    TENANTS ||--o{ SALES : generates
+    TENANTS ||--o{ CUSTOMERS : manages
+    CUSTOMERS ||--o{ SALES : makes
+    USERS ||--o{ SALES : processes
+    SALES ||--|{ SALE_DETAILS : contains
+    INVENTORY_ITEMS ||--o{ SALE_DETAILS : included_in
+
+    %% Logistics Module
+    TENANTS ||--o{ DISPATCHES : organizes
+    TENANTS ||--o{ DRIVERS : employs
+    USERS ||--o{ DISPATCHES : creates
+    DRIVERS ||--o{ DISPATCHES : executes
+    DISPATCHES ||--|{ DISPATCH_SALES : groups
+    SALES ||--o| DISPATCH_SALES : assigned_to
+    DISPATCHES ||--o{ DISPATCH_INCIDENTS : records
+
+    %% Alerts Module
+    TENANTS ||--o{ NOTIFICATIONS : receives
+    USERS ||--o{ NOTIFICATIONS : notified_by
+
+    TENANTS {
+        uuid id PK
+        varchar name
+        varchar ruc
+        uuid subscription_plan_id FK
+    }
+    USERS {
+        uuid id PK
+        uuid tenant_id FK
+        integer role_id FK
+        varchar full_name
+        varchar email
+    }
+    INVENTORY_ITEMS {
+        uuid id PK
+        uuid tenant_id FK
+        uuid category_id FK
+        varchar sku
+        integer quantity
+        numeric unit_price
+    }
+    STOCK_MOVEMENTS {
+        uuid id PK
+        uuid inventory_item_id FK
+        uuid user_id FK
+        varchar movement_type
+        integer quantity
+        varchar reason
+    }
+    SALES {
+        uuid id PK
+        uuid tenant_id FK
+        uuid customer_id FK
+        uuid user_id FK
+        numeric total_amount
+        varchar status
+    }
+    DISPATCHES {
+        uuid id PK
+        uuid tenant_id FK
+        uuid driver_id FK
+        uuid user_id FK
+        varchar status
+    }
+```
