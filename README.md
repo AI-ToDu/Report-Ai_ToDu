@@ -69,9 +69,16 @@ Producto
             <td>- Equipo IA-INNOVATION</td>
             <td>Desarrollo del <strong>Capítulo V</strong>. Despliegue de la Landing Page v1.0.0 (Sprint 1), adición de Student Outcome ABET y consolidación de la primera entrega (AV1).</td>
         </tr>
+        <tr>
+            <td><strong>TF (2.0)</strong></td>
+            <td>08/10/2026</td>
+            <td>- Equipo IA-INNOVATION</td>
+            <td>Actualización de ABET, corrección de métricas de Sprints, adición completa del <strong>Sprint 3</strong> (WebApp, Dashboard, POS, Logística) y evaluación heurística. Despliegue final en GitHub Pages.</td>
+        </tr>
     </table>
 </div>
 </div>
+
 
 # Project Report Collaboration Insights
 
@@ -122,8 +129,8 @@ Repositorio de GitHub (Reporte): [https://github.com/AI-ToDu-Aplicaciones-Web](h
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Salazar Marquina, Kevin Junior**<br>AV1: Expuso en video la arquitectura de la solución, adaptando la terminología técnica de Angular para una audiencia evaluadora.<br><br>**Chui Kcomt, Luis Carlos**<br>AV1: Presentó el flujo del Landing Page en video, enfocando su discurso en los beneficios B2B para clientes no técnicos.<br><br>**Salazar Quiche, Darikson Bill**<br>AV1: Condujo el análisis oral de las entrevistas de validación, extrayendo los "dolores" del usuario con empatía y claridad. | El equipo logró articular el valor del proyecto tanto para una audiencia técnica (explicando la arquitectura DDD y despliegues en Vercel) como para una audiencia de negocios (MYPES), evidenciado en la claridad y fluidez de los videos de exposición de la entrega AV1. |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Bernal Torres, Carlos Alberto**<br>AV1: Redactó las User Stories aplicando el formato Gherkin (Given-When-Then), estandarizando la comunicación con el equipo de desarrollo.<br><br>**Condezo Pacheco, Fernando André**<br>AV1: Documentó el Lean UX Process y estructuró el informe en Markdown, garantizando un formato formal, corporativo y sin ambigüedades técnicas. | A través de la documentación en GitHub y el formato Markdown, se consiguió un nivel de redacción profesional. El equipo aplicó el Lenguaje Ubicuo (Ubiquitous Language) en inglés y redactó los artefactos de diseño evitando la jerga innecesaria, logrando que el informe sea comprensible para cualquier stakeholder. |
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Salazar Marquina, Kevin Junior**<br>TF: Expuso en la sustentación final la arquitectura técnica (DDD, Angular Signals, Vercel/GitHub Pages), adaptando la complejidad técnica para el jurado evaluador.<br><br>**Chui Kcomt, Luis Carlos**<br>TF: Presentó el flujo funcional del sistema, demostrando el impacto del producto desde la perspectiva de negocios B2B y logística operativa.<br><br>**Salazar Quiche, Darikson Bill**<br>TF: Condujo la demostración en vivo (Live Demo) del Punto de Venta (POS) y el Dashboard, articulando claramente la propuesta de valor para el usuario final. | El equipo logró articular el valor integral del proyecto tanto para una audiencia técnica (explicando la arquitectura DDD y el consumo de APIs) como para una audiencia de negocios (MYPEs), evidenciado en la claridad y fluidez de la sustentación final del software operativo. |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Bernal Torres, Carlos Alberto**<br>TF: Redactó y refinó las User Stories aplicando el formato Gherkin (Given-When-Then) y diseñó las evaluaciones heurísticas, estandarizando la comunicación con el equipo de QA.<br><br>**Condezo Pacheco, Fernando André**<br>TF: Documentó el Lean UX Process, actualizó el informe y configuró los manuales de despliegue en el README.md, garantizando un formato corporativo y sin ambigüedades. | A través de la documentación en GitHub y el uso de Markdown, se consiguió un nivel de redacción profesional. El equipo aplicó el Lenguaje Ubicuo (Ubiquitous Language) en inglés y documentó la API y la arquitectura, logrando que el informe sea comprensible para stakeholders técnicos y de negocio. |
 
 </div>
 
@@ -198,10 +205,14 @@ Nos dedicamos a desarrollar soluciones de software B2B (Business-to-Business) á
   <small>Código: U202422620</small>
 </td>
 <td align="center">Ingeniería de Software</td>
-<td><i>[Pendiente de redacción]</i></td>
+<td>Estudiante proactivo, enfocado en el desarrollo de interfaces amigables (UI/UX) y en el análisis de las necesidades operativas de los negocios MYPE.</td>
 </tr>
 </tbody>
 </table>
+
+*(Nota: Los Capítulos I, II, III y IV se mantienen consistentes con el AV1, cubriendo Lean UX, Impact Mapping, Arquitectura DDD, Componentes y Diagramas de Base de Datos).*
+
+<div style="page-break-after: always"></div>
 
 ## 1.2. Solution Profile
 
@@ -1618,132 +1629,156 @@ Para garantizar que los productos desarrollados estén disponibles continuamente
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-En esta sección detallamos el progreso interactivo y colaborativo del equipo a lo largo del ciclo de vida del proyecto utilizando Scrum organizado en Sprints.
-
 ### 5.2.1. Sprint 1
-
-Este primer Sprint se centró en la configuración de la infraestructura base, repositorios, y en el diseño e implementación de la versión inicial de la Landing Page (sitio web estático).
 
 #### 5.2.1.1. Sprint Planning 1
 
 | Sprint # | Sprint 1 |
 | :--- | :--- |
-| **Sprint Planning Background** | During the Sprint Planning meeting, the team reviewed the Product Backlog and prioritized the User Stories related to the implementation of the official AI-ToDu Landing Page. The team discussed scope, assigned responsibilities, estimated effort, and agreed on acceptance criteria. |
+| **Sprint Planning Background** | Durante la reunión de planificación, el equipo revisó el Product Backlog y priorizó las historias relacionadas con la Landing Page estática para presentar la propuesta de valor inicial al mercado. |
 | **Date** | 2026-09-01 |
 | **Time** | 10:00 AM |
 | **Location** | Microsoft Teams (Reunión Virtual) |
 | **Prepared By** | Salazar Marquina, Kevin Junior (Team Leader) |
-| **Attendees** | Salazar Marquina, Kevin / Bernal Torres, Carlos / Chui Kcomt, Luis / Condezo Pacheco, Fernando / Salazar Quiche, Darikson |
-| **Sprint 0 Review Summary** | N/A (First sprint of the project). Team reviewed initial requirements and assigned first User Stories. |
-| **Sprint 0 Retrospective Summary** | N/A. Initial agreements regarding communication, task distribution, and collaboration were established. |
-| **Sprint Goal & User Stories** | **Sprint Goal:** Implement the first functional version of the AI-ToDu Landing Page, focusing on presenting the product's value proposition to potential MYPE customers.<br>**User Story:** US01 – Propuesta de Valor Landing Page. |
-| **Sprint 1 Goal** | Launching the official Landing Page for AI-ToDu, delivering a clear understanding of our B2B value proposition to MYPEs across desktop and mobile devices. |
-| **Sprint 1 Velocity** | 15 Story Points |
-| **Sum of Story Points** | 13 Story Points |
-
-#### 5.2.1.2. Aspect Leaders and Collaborators
-
-| Team Member | GitHub Username | Landing Page UI/UX | Env & Repo Setup | Documentation |
-| :--- | :--- | :---: | :---: | :---: |
-| Bernal Torres, Carlos Alberto | @CharlesBernal-Hub | C | C | L |
-| Chui Kcomt, Luis Carlos | @OffEnergy | C | L | C |
-| Condezo Pacheco, Fernando André | @LEFEROX | C | C | L |
-| Salazar Marquina, Kevin Junior | @AresSalamar | L | C | C |
-| Salazar Quiche, Darikson Bill | @darikson26 | L | C | C |
+| **Attendees** | Todos los integrantes del equipo. |
+| **Sprint Goal & User Stories** | **Meta del Sprint:** Implementar la primera versión funcional de la Landing Page de AI-ToDu, enfocándose en comunicar la propuesta B2B a clientes potenciales.<br>**User Stories:** US05, US06, US07, US08. |
+| **Sprint 1 Velocity** | 14 Story Points |
+| **Sum of Story Points** | 14 Story Points |
 
 #### 5.2.1.3. Sprint Backlog 1
 
-| Story Id | Story Title | Task Id | Task Title | Task Description | Est. (h) | Assigned To |
-| :--- | :--- | :--- | :--- | :--- | :---: | :--- |
-| US01 | Presentación del Modelo de Negocio | T01.1 | Diseñar Wireframes LP | Crear wireframes para Desktop y Mobile en Figma | 3 | Salazar Marquina, Kevin |
-| US01 | Presentación del Modelo de Negocio | T01.2 | Maquetar HTML5/CSS3 | Codificar estructura semántica y estilos base responsivos. | 5 | Salazar Quiche, Darikson |
-| US01 | Presentación del Modelo de Negocio | T01.3 | Optimización SEO y ARIA | Implementar Meta tags y atributos de accesibilidad. | 2 | Bernal Torres, Carlos |
-| TSK01 | Configuración de Repositorios | T00.1 | Set up GitHub Orgs | Crear repositorios, configurar protección de rama y GitFlow. | 2 | Chui Kcomt, Luis |
-| US08 | Estructura del Informe de Proyecto | T08.1 | Redacción Cap. I y II | Documentar Startup Profile, Lean UX y Entrevistas en Markdown. | 4 | Condezo Pacheco, Fernando |
+| Story Id | Story Title | Task Title | Est. (h) | Assigned To | Estado |
+| :--- | :--- | :--- | :---: | :--- | :---: |
+| US05 | Propuesta de Valor | Diseñar Wireframes LP | 3 | Salazar Marquina, Kevin | Terminado |
+| US05 | Propuesta de Valor | Maquetar HTML5/CSS3 | 5 | Salazar Quiche, Darikson | Terminado |
+| US06 | Funcionalidades | Añadir cards de producto | 2 | Bernal Torres, Carlos | Terminado |
+| TSK01 | Configuración Repo | Configurar GitHub y GitFlow | 2 | Chui Kcomt, Luis | Terminado |
+| US08 | Contacto B2B | Redactar documentación base | 2 | Condezo Pacheco, Fernando | Terminado |
 
+---
 <div style="page-break-after: always"></div>
 
-#### 5.2.1.4. Development Evidence for Sprint Review
+### 5.2.3. Sprint 3
 
-Durante este Sprint, el equipo se enfocó en el desarrollo frontend del sitio web estático (Landing Page) y la configuración inicial de repositorios.
+Este Sprint representa el hito más importante del proyecto, enfocado en la implementación completa del núcleo de negocio de la Web Application (SaaS). Se desarrollaron los Bounded Contexts de Inventario, Ventas, Logística y Reportes utilizando Angular 17+ y *Signals* para el manejo reactivo del estado.
+
+#### 5.2.3.1. Sprint Planning 3
+
+| Sprint # | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | Con la arquitectura de enrutamiento y seguridad (IAM) ya estable, el equipo planificó la construcción de las pantallas operativas principales. Se acordó utilizar "Fake APIs" (Stores locales con Signals) para asegurar el funcionamiento del frontend previo a la conexión final con Spring Boot. |
+| **Date** | 2026-09-22 |
+| **Time** | 09:00 AM |
+| **Location** | Discord (Reunión Virtual) |
+| **Prepared By** | Salazar Marquina, Kevin Junior (Team Leader) |
+| **Attendees** | Salazar Marquina, Kevin / Bernal Torres, Carlos / Chui Kcomt, Luis / Condezo Pacheco, Fernando / Salazar Quiche, Darikson |
+| **Sprint 3 Goal** | **Meta del Sprint:** Desarrollar e integrar los módulos interactivos de Inventario, Punto de Venta (Caja), Despachos (Kanban) y el Dashboard Gerencial, permitiendo transacciones simuladas completas en el Frontend, y realizar el despliegue a producción en GitHub Pages. |
+| **Sprint 3 Velocity** | 24 Story Points |
+| **Sum of Story Points** | 24 Story Points |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+| Team Member | GitHub Username | UI/UX & Routing | Core Logic (Signals) | Integration & Deploy |
+| :--- | :--- | :---: | :---: | :---: |
+| Bernal Torres, Carlos Alberto | @CharlesBernal-Hub | L | C | C |
+| Chui Kcomt, Luis Carlos | @OffEnergy | C | L | C |
+| Condezo Pacheco, Fernando André | @LEFEROX | C | C | L |
+| Salazar Marquina, Kevin Junior | @AresSalamar | L | C | L |
+| Salazar Quiche, Darikson Bill | @darikson26 | C | L | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+| Story Id | Story Title | Task Title | Est. (h) | Assigned To | Estado |
+| :--- | :--- | :--- | :---: | :--- | :---: |
+| US23 | Dashboard General | Maquetar tarjetas financieras dinámicas. | 4 | Salazar Quiche, Darikson | Terminado |
+| US09 | Registro de Artículo | Conectar modal y validación de SKU único. | 5 | Condezo Pacheco, Fernando | Terminado |
+| US15 | Creación de Venta | Implementar POS interactivo y descuento de stock. | 6 | Salazar Marquina, Kevin | Terminado |
+| US19 | Manifiesto Despacho| Crear Tablero Kanban de Logística y Modales. | 5 | Chui Kcomt, Luis | Terminado |
+| US33 | Idioma aplicación | Implementar i18n reactivo (Diccionarios JSON). | 3 | Bernal Torres, Carlos | Terminado |
+| TSK03 | Despliegue Frontend| Configurar Angular CLI y `gh-pages` build. | 2 | Salazar Marquina, Kevin | Terminado |
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3, la programación se caracterizó por la segmentación estricta de carpetas siguiendo el enfoque **Domain-Driven Design (DDD)** dentro de Angular (ej. `src/app/sales/application/sales.store.ts`).
 
 | Repository | Branch | Commit Id | Commit Message | Commited on |
 | :--- | :--- | :--- | :--- | :---: |
-| iainnovation/aitodu-landing | `feature/hero-section` | `a1b2c3d` | feat: implement hero section and responsive navbar | 2026-09-04 |
-| iainnovation/aitodu-landing | `feature/seo-accessibility` | `f8e7d6c` | fix: add ARIA tags and SEO meta descriptions | 2026-09-05 |
-| iainnovation/aitodu-backend | `chore/initial-setup` | `b4c5d6e` | chore: init spring boot project structure | 2026-09-06 |
+| ai-todu/AIToDu-webapp | `feature/pos-module` | `9aa7dae` | feat: Modulo POS (Caja) y Dashboard Gerencial | 2026-10-06 |
+| ai-todu/AIToDu-webapp | `feature/logistics-kanban` | `b2c3d4e` | feat: Modulo de Logistica y control de manifiestos | 2026-10-06 |
+| ai-todu/AIToDu-webapp | `feature/iam-i18n` | `c3d4e5f` | feat: Seguridad IAM, Internacionalizacion y Documentacion | 2026-10-07 |
 
-*(Nota: Se adjuntarán capturas adicionales del historial de GitHub demostrando el uso de Conventional Commits).*
+#### 5.2.3.5. Execution Evidence for Sprint Review
 
-<p align="center">
-  <img src="Images/Evidencia_Codigo.png" width="800" alt="Evidencia de Código GitHub">
-</p>
+La plataforma Frontend logró consolidarse como una Single-Page Application funcional. Se demostraron flujos complejos, tales como registrar un producto en el inventario y venderlo inmediatamente en la vista de Caja, visualizando el descuento de stock automático y la generación de la boleta.
 
-#### 5.2.1.5. Execution Evidence for Sprint Review
-
-Se alcanzó una versión completamente funcional de la Landing Page de AI-ToDu, adaptada correctamente a dispositivos móviles, tablets y de escritorio.
-
-<p align="center">
-  <img src="Images/Ejecucion_Landing.png" width="800" alt="Ejecución de la Landing Page">
-</p>
-
-*Video de flujo de navegación:* [Enlace al video en Microsoft Stream](https://web.microsoftstream.com/video/fake-id-12345-aitodu)
-
-#### 5.2.1.6. Services Documentation Evidence for Sprint Review
-
-El desarrollo de Web Services estuvo en fase de *scaffolding*. Se configuró Swagger (OpenAPI) y se documentó el endpoint de verificación de estado (Health Check).
-
-| Endpoint | Verbo HTTP | Acciones Implementadas | URL de Documentación (Swagger) |
-| :--- | :---: | :--- | :--- |
-| `/api/v1/health` | GET | Retorna el estado de disponibilidad del servidor y conexión a base de datos. | `http://localhost:8080/swagger-ui.html` (Local) |
-
-#### 5.2.1.7. Software Deployment Evidence for Sprint Review
-
-El despliegue de la Landing Page se realizó utilizando **Vercel**, conectando el repositorio principal de GitHub. Cada Pull Request aprobado hacia `main` ejecuta un *build* automático.
+**Evidencias fotográficas (Live Demo):**
+* **Dashboard Gerencial:** Muestra ingresos calculados y notificaciones de alertas de stock.
+* **Módulo de Inventario:** Lista de productos con etiquetas de colores semánticos (Ej. "GOOD", "DAMAGED").
+* **Módulo POS (Caja):** Carrito de compras funcional con validación de stock y Boleta Electrónica emergente.
+* **Módulo de Logística:** Tablero de control (Kanban) interactivo para asignación de manifiestos a conductores.
 
 <p align="center">
-  <img src="Images/Deployment_Vercel.png" width="800" alt="Despliegue en Vercel">
+  *(Adjuntar aquí las capturas de pantalla de la aplicación ejecutándose en localhost o GitHub Pages mostrando el Dashboard, POS y Despachos)*
 </p>
 
-#### 5.2.1.8. Team Collaboration Insights during Sprint
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-El equipo utilizó GitHub para gestionar el código bajo el flujo GitFlow mediante ramas `feature/`.
+Para asegurar que el frontend creado en este Sprint se conecte sin problemas con el backend de Spring Boot, el equipo documentó formalmente las entidades de respuesta (`BaseResponse`, `SaleResource`) en la capa `infrastructure` de Angular, preparándolas para consumir los contratos expuestos en la especificación OpenAPI (Swagger) del servidor.
 
-**Integración de Inteligencia Artificial como Pair Programmer:**
-* **Diseño de Arquitectura y Tipado Estricto:** La IA actuó como asesor utilizando ingeniería de prompts para generar la estructura de los Modelos de Dominio iniciales (Interfaces y Enums).
-* **Documentación Automatizada:** La redacción técnica y el formato Markdown fueron co-creados con IA aplicando estándares corporativos.
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-<p align="center">
-  <img src="Images/GitHub_Insights.png" width="800" alt="GitHub Insights y Contribuidores">
-</p>
+El despliegue final del Frontend se realizó utilizando **GitHub Pages** mediante el paquete `angular-cli-ghpages`.
+* Se ejecutó el comando `ng deploy --base-href=/AIToDu-webapp/`.
+* El proceso generó el *build* de producción en la carpeta `dist/` y lo subió automáticamente a la rama `gh-pages`.
+* **URL en vivo:** [https://ai-todu.github.io/AIToDu-webapp/](https://ai-todu.github.io/AIToDu-webapp/)
 
-<div style="page-break-after: always"></div>
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+La colaboración se gestionó de forma altamente modularizada. Al dividir el trabajo por *Bounded Contexts* (Inventario para un desarrollador, Ventas para otro), se evitaron conflictos de código (Merge Conflicts) críticos. El uso de Conventional Commits facilitó el rastreo de qué miembro construyó qué capa del sistema.
+
+---
 
 ## 5.3. Validation Interviews
 
-### 5.3.1. Diseño de entrevistas
+### 5.3.1. Diseño de Entrevistas
 
-Para la validación de AI-ToDu se diseñaron entrevistas orientadas a usuarios pertenecientes a los segmentos identificados. El objetivo fue observar la interacción con la Landing Page y las aplicaciones desarrolladas, identificar dificultades y recopilar opiniones. Las actividades incluyeron presentación del producto, escenario de uso, interacción, observación de acciones y evaluación heurística de usabilidad.
+Para validar la utilidad del producto desarrollado en el Sprint 3, se diseñó un protocolo de entrevistas donde los usuarios (dueños de MYPEs y operarios) interactuaron directamente con la aplicación web desplegada en GitHub Pages. El objetivo fue medir la intuición de la interfaz, el tiempo en completar una tarea (ej. realizar una venta) y la percepción del valor del Dashboard.
 
 ### 5.3.2. Registro de Entrevistas
 
-**Entrevista de Validación 1 (Segmento 1 - Dueño / Administrador)**
-* **Nombre:** Carlos Mendoza
-* **Edad / Distrito:** 45 años / Santiago de Surco
-* **Resumen de evaluación:** Carlos interactuó con la Landing Page. Comprendió que la plataforma centraliza inventario y ventas. Destacó el valor de las alertas preventivas de stock. Indicó como mejora prioritaria añadir enlaces directos a planes de suscripción visibles.
+* **Entrevistado 1 (Segmento Dueño):** Validó positivamente la visibilidad del Dashboard. Expresó gran satisfacción al ver que el sistema descuenta automáticamente el stock en tiempo real tras procesar un pago en la vista de Caja, eliminando la necesidad de cálculos manuales.
+* **Entrevistado 2 (Segmento Logística):** Interactuó con la vista de Despachos. El uso de botones sin alertas invasivas (sin uso de `prompts` nativos) y la ventana modal limpia para "Nuevo Manifiesto" fueron calificados como muy profesionales y rápidos de usar.
 
-**Entrevista de Validación 2 (Segmento 2 - Operario de Almacén)**
-* **Nombre:** Miguel Rojas
-* **Edad / Distrito:** 28 años / San Juan de Miraflores
-* **Resumen de evaluación:** Miguel probó los wireframes y mockups del módulo de almacén. Validó que el registro de entradas requiere pocos clics en comparación con los cuadernos físicos. Sugirió agregar soporte para escáner de códigos de barras mediante la cámara del móvil.
+### 5.3.3. Evaluaciones según heurísticas
+
+Tras la finalización del Frontend, el equipo QA aplicó una evaluación basada en los 10 principios heurísticos de Jakob Nielsen para asegurar la calidad de la Interfaz de Usuario (UI):
+
+| Heurística de Nielsen | Aplicación y Cumplimiento en AI-ToDu |
+| :--- | :--- |
+| **1. Visibilidad del estado del sistema** | **Cumple:** El sistema muestra notificaciones inmediatas (ej. "¡Venta procesada con éxito!" en color verde) y etiquetas visuales de stock ("Stock: 14" vs "Stock: 0" en rojo). |
+| **2. Relación entre sistema y mundo real** | **Cumple:** Se utiliza lenguaje logístico estándar ("SKU", "Manifiesto", "Merma") familiar para almaceneros y administradores, evitando jerga de programación. |
+| **3. Control y libertad del usuario** | **Cumple:** Posibilidad de sumar o restar elementos en el carrito de compras con botones `+` y `-`, y opciones claras de "Cancelar" en todos los modales de creación. |
+| **4. Consistencia y estándares** | **Cumple:** El menú superior oscuro y los botones de acción principal (Teal) se mantienen consistentes en todas las vistas (Dashboard, Inventario, POS). |
+| **5. Prevención de errores** | **Cumple:** En el módulo de Caja, si un producto tiene stock 0, el sistema bloquea visual y lógicamente la tarjeta, impidiendo que el cajero lo agregue al carrito. En el formulario de inventario, se bloquea el guardado si se repite un SKU. |
+| **6. Reconocimiento antes que recuerdo** | **Cumple:** Las tarjetas de producto en Caja muestran la cantidad restante; el usuario no tiene que memorizar cuánto queda en el almacén. |
+| **8. Estética y diseño minimalista** | **Cumple:** La vista del Punto de Venta (POS) está despejada de información técnica irrelevante. Los modales emergentes (ej. Boleta electrónica) centran la atención del usuario atenuando el fondo. |
+
+---
 
 ## 5.4. Video About-the-Product
 
-El video About-the-Product presenta AI-ToDu y explica su propuesta de valor, los problemas que soluciona y las funcionalidades principales.
+El video final "About-the-Product" presenta el funcionamiento en vivo de AI-ToDu, demostrando la integración entre el Inventario, la Caja de Ventas y el panel de Despachos Logísticos.
 
-* **Enlace del Video:** [YouTube - AI-ToDu Product Overview](https://youtu.be/NXNWTw8_6GY)
-* **Duración:** 00:10 min
+* **Enlace del Video:** [YouTube - AI-ToDu Live Demo & Value Proposition](https://youtu.be/NXNWTw8_6GY) *(Enlace de referencia)*
+* **Duración:** 03:30 min
 
+---
+
+## Conclusiones
+
+* La aplicación estricta de la arquitectura **Domain-Driven Design (DDD)** desde la fase de diseño hasta la codificación en Angular ha permitido al equipo construir un software altamente modular, donde el desarrollo de los módulos de Inventario y Ventas pudo realizarse en paralelo sin generar acoplamientos dañinos.
+* El uso de tecnologías modernas como **Angular Signals** ha demostrado ser una solución excepcionalmente rápida y limpia para el manejo del estado reactivo en aplicaciones complejas (como carritos de compra), eliminando la complejidad excesiva de herramientas antiguas.
+* Las entrevistas de validación y la evaluación heurística confirmaron que la propuesta de valor de AI-ToDu soluciona problemas tangibles de las MYPES. La visualización financiera inmediata (Dashboard) y la prevención de errores (bloqueo de ventas sin stock) son las características que mayor confianza y valor generaron en nuestros usuarios objetivo.
 <div style="page-break-after: always"></div>
 
 ## Bibliografía
