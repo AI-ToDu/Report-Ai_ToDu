@@ -177,7 +177,7 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
 * **Gains (Metas/Objetivos):** Quiere tener visibilidad en tiempo real de su rentabilidad (Dashboard) y asegurar que nadie le robe mercadería (Roles y Permisos).
 * **Pains (Frustraciones):** Sufre de alto estrés por los descuadres a fin de mes. Odia depender de que su empleado le pase el archivo de Excel actualizado.
 
-<p align="center"><img src="Images/Captura_UXPressia_Carlos.jpg" width="800" alt="User Persona Carlos Mendoza"></p>
+<p align="center"><img src="Images/User-Persona-1.png" width="800" alt="User Persona Carlos Mendoza"></p>
 
 <div style="page-break-after: always"></div>
 
@@ -190,7 +190,7 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
 * **Gains (Metas/Objetivos):** Desea un sistema extremadamente simple ("pocos clics") y un buscador inteligente para encontrar insumos rápido.
 * **Pains (Frustraciones):** Quedarse hasta la madrugada haciendo el inventario de fin de mes. Perder hojas de ruta o papeles de despacho semanales.
 
-<p align="center"><img src="Images/Captura_UXPressia_Miguel.jpg" width="800" alt="User Persona Miguel Rojas"></p>
+<p align="center"><img src="Images/User-Persona-2.png" width="800" alt="User Persona Miguel Rojas"></p>
 
 <div style="page-break-after: always"></div>
 
@@ -275,7 +275,7 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
     4. **Toma de decisiones (Resignación):** Trata de calcular la rentabilidad al "ojo". Pierde todo su fin de semana cuadrando papeles.
 * **Oportunidad para AI-ToDu:** Automatizar la consolidación de datos. Ofrecer un Dashboard que muestre la rentabilidad sin tener que pedirle el archivo a nadie.
 
-<p align="center"><img src="Images/Captura_UXPressia_Journey_Carlos.jpg" width="800" alt="Journey Map Carlos Mendoza"></p>
+<p align="center"><img src="Images/User-Journey-Map-1.png" width="800" alt="Journey Map Carlos Mendoza"></p>
 
 <div style="page-break-after: always"></div>
 
@@ -288,7 +288,7 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
     4. **Fin de turno (Agotamiento):** Todos se van, pero él debe quedarse 2 horas extra transcribiendo lo del cuaderno al Excel para mandárselo a Carlos.
 * **Oportunidad para AI-ToDu:** Reemplazar el cuaderno por una app móvil con lector de códigos o registro de 2 clics. Buscador inteligente de ubicaciones en el almacén.
 
-<p align="center"><img src="Images/Captura_UXPressia_Journey_Miguel.jpg" width="800" alt="Journey Map Miguel Rojas"></p>
+<p align="center"><img src="Images/User-Journey-Map-2.png" width="800" alt="Journey Map Miguel Rojas"></p>
 
 <div style="page-break-after: always"></div>
 
@@ -303,7 +303,7 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
 * **Pains (Dolores):** Descuadres a fin de mes, mermas inexplicables, robos de mercadería, estrés continuo.
 * **Gains (Beneficios esperados):** Tranquilidad mental, control total desde su celular, saber su margen de ganancia real en 5 segundos.
 
-<p align="center"><img src="Images/Captura_UXPressia_Empathy_Carlos.jpg" width="800" alt="Empathy Map Carlos Mendoza"></p>
+<p align="center"><img src="Images/Empathy-Map-1.png" width="800" alt="Empathy Map Carlos Mendoza"></p>
 
 <div style="page-break-after: always"></div>
 
@@ -316,7 +316,7 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
 * **Pains (Dolores):** Transcribir datos al final del día (doble trabajo), que le echen la culpa de las pérdidas, quedarse horas extra sin paga.
 * **Gains (Beneficios esperados):** Un sistema tipo "TikTok" de fácil de usar, no usar más lapicero, poder irse a su casa a la hora de salida.
 
-<p align="center"><img src="Images/Captura_UXPressia_Empathy_Miguel.jpg" width="800" alt="Empathy Map Miguel Rojas"></p>
+<p align="center"><img src="Images/Empathy-Map-2.png" width="800" alt="Empathy Map Miguel Rojas"></p>
 
 <div style="page-break-after: always"></div>
 
@@ -342,7 +342,7 @@ Utilizamos la siguiente convención de colores:
 
 **Análisis y Oportunidades:** Al visualizar el flujo completo, el equipo notó que la mayor acumulación de "dolores" y cuellos de botella (representados con post-its rojos de riesgo) ocurría en la transición entre la Fase 1 y la Fase 2. La información de lo que hay en el almacén no fluye en tiempo real hacia ventas, generando un vacío de información. AI-ToDu actuará como el puente digital que sincronice los eventos `InventoryUpdated` directamente con `PurchaseOrderPlaced`.
 
-<p align="center"><img src="Images/Captura_FigJam_Big_Picture_EventStorming.jpg" width="800" alt="Event Storming AI-ToDu"></p>
+<p align="center"><img src="Images/Big-Picure-Event-Storming.png" width="800" alt="Event Storming AI-ToDu"></p>
 
 ## 2.5. Ubiquitous Language
 
