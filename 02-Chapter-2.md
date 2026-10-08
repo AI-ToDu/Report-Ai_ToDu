@@ -92,7 +92,7 @@ Como evidencia de nuestra investigación cualitativa, hemos consolidado las entr
 | **ID** | E-S1-01 |
 | **Edad / Distrito** | 45 años / Santiago de Surco |
 | **Timing del video** | 00:00 - 04:15 min |
-| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Carlos.jpg" width="400" alt="Carlos Mendoza"></p> |
+| **Evidencia fotográfica** | <p align="center"><img src="Images/Carlos_Mendoza.jpeg" width="400" alt="Carlos Mendoza"></p> |
 | **Resumen descriptivo** | Carlos está casado y tiene dos hijos. Administra una pequeña cadena de tres restaurantes. Su dispositivo principal es una Laptop con Windows, pero revisa todo el día su celular (iPhone). Se informa vía LinkedIn y WhatsApp, y admira marcas que proyectan estatus y eficiencia como Apple y a referentes locales como Gastón Acurio. En su día a día, sufre de estrés porque confía en reportes de Excel elaborados a mano por su administrador, lo que genera un descuadre constante (merma) entre las compras de mercado y las ventas en caja. Su mayor expectativa de "varita mágica" es un panel de control (Dashboard) que le muestre en su celular si el negocio está ganando o perdiendo dinero en tiempo real. |
 
 | Campo | Detalle |
@@ -101,7 +101,7 @@ Como evidencia de nuestra investigación cualitativa, hemos consolidado las entr
 | **ID** | E-S1-02 |
 | **Edad / Distrito** | 38 años / San Borja |
 | **Timing del video** | 04:16 - 08:30 min |
-| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Lucia.jpg" width="400" alt="Lucía Valdivia"></p> |
+| **Evidencia fotográfica** | <p align="center"><img src="Images/Lucia_Valdivia1.jpeg" width="400" alt="Lucía Valdivia"></p> |
 | **Resumen descriptivo** | Lucía es soltera y fundadora de una MYPE textil. Pasa casi todo su día en su Smartphone (Android de gama alta) y utiliza mucho Instagram y WhatsApp Business para vender. Sigue a marcas como Zara (por su logística) y a diversos influencers emprendedores. Su mayor frustración (dolor) es que se le ha paralizado la producción varias veces porque olvidó comprar hilos o botones específicos, ya que el control lo lleva en un cuaderno. Expresó que aprender sistemas nuevos le asusta un poco, por lo que pide que la solución tenga botones muy claros y alertas de colores cuando falte mercadería. |
 
 | Campo | Detalle |
