@@ -91,7 +91,7 @@ En esta sección se especifican los requisitos del sistema AI-ToDu mediante un c
 En esta sección se presenta el Impact Mapping del modelo de negocio AI-ToDu. Esto nos permite visualizar de manera estructurada los objetivos estratégicos del proyecto y cómo estos se relacionan con los actores involucrados y las funcionalidades que se implementarán, asegurándonos de que cada característica del producto tenga un propósito claro y medible.
 
 <p align="center">
-  <img src="Images/Captura_UXPressia_ImpactMapping.jpg" width="800" alt="Impact Mapping de AI-ToDu">
+  <img src="Images/Impact-Mapping-1.png" width="800" alt="Impact Mapping de AI-ToDu">
   <br><em>Figura 1: Captura del Impact Mapping hecho en UXPressia</em>
 </p>
 
@@ -107,7 +107,7 @@ El Impact Mapping elaborado para AI-ToDu ilustra de manera estratégica cómo la
 A continuación, se presenta el Product Backlog del proyecto AI-ToDu, organizado y priorizado de acuerdo con el valor que cada User Story aporta al negocio y al funcionamiento principal del producto. La priorización no representa necesariamente el orden exacto en el que se desarrollarán técnicamente las funcionalidades, sino el nivel de importancia que tienen para validar y entregar valor al usuario.
 
 <p align="center">
-  <img src="Images/Captura_Tablero_Backlog.jpg" width="800" alt="Product Backlog de AI-ToDu">
+  <img src="Images/Trello-Backlog-1.png" width="800" alt="Product Backlog de AI-ToDu">
   <br><em>URL del Product Backlog (Trello): [URL_Publico_Del_Tablero_Trello]</em>
 </p>
 
