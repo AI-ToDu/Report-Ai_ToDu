@@ -105,7 +105,7 @@ A continuación, se presenta la consolidación del desarrollo de actividades par
 
 ---
 
-Repositorio de GitHub (Reporte): [https://github.com/AI-ToDu-Aplicaciones-Web](https://github.com/AI-ToDu-Aplicaciones-Web)
+Repositorio de GitHub (Reporte): [https://github.com/AI-ToDu-Aplicaciones-Web](https://github.com/AI-ToDu)
 
 <div style="page-break-after: always;"></div>
 
