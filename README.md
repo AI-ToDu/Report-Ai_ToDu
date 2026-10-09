@@ -79,25 +79,29 @@ Producto
 </div>
 </div>
 
+<div style="page-break-after: always"></div>
 
 # Project Report Collaboration Insights
 
 El desarrollo y evolución de este informe de proyecto se gestiona de forma colaborativa a través de un repositorio de control de versiones en GitHub, perteneciente a la organización pública de nuestro equipo (IA-INNOVATION).
 
-Durante esta primera etapa (AV1), todos los miembros del equipo han colaborado en la redacción de los capítulos iniciales utilizando la sintaxis Markdown, aplicando flujos de trabajo basados en branches (ramas) para la redacción de cada sección y realizando Pull Requests para su revisión antes de la integración a la rama principal (main).
+Durante todas las etapas del proyecto (desde la entrega AV1 hasta el Trabajo Final - TF), todos los miembros del equipo han colaborado en la redacción integral de los capítulos utilizando la sintaxis Markdown. Para asegurar la calidad de la documentación técnica y de negocio, se aplicaron flujos de trabajo basados en branches (ramas) para el desarrollo de cada sección y se realizaron Pull Requests obligatorios para su revisión cruzada antes de la integración a la rama principal (main).
 
-A continuación, se explicará todo acerca del desarrollo de actividades para la elaboración del informe junto con capturas de los analíticos de colaboración y commits en Github.
+A continuación, se presenta la consolidación del desarrollo de actividades para la elaboración del informe final, respaldada por las capturas de los analíticos de colaboración y el registro final de commits en GitHub.
 
-*(Pendiente: Insertar imagen commits-insights.jpeg)*
+<br> <img src="Images/insigth.jpeg" alt="Logo de la Universidad" width="300"> <br>
+<br> <img src="Images/Insight-Collab.jpeg" alt="Logo de la Universidad" width="300"> <br>
+<br> <img src="Images/commits.jpeg" alt="Logo de la Universidad" width="300"> <br>
+<br> <img src="Images/commiters.jpeg" alt="Logo de la Universidad" width="300"> <br>
 
 ## Commits por integrante (AV1)
 
-- **Bernal Torres, Carlos Alberto (`CharlesBernal-Hub`)**: [XX] commits
-- **Chui Kcomt, Luis Carlos (`OffEnergy`)**: [XX] commits
-- **Condezo Pacheco, Fernando André (`LEFEROX`)**: [XX] commits
-- **Salazar Marquina, Kevin Junior (`AresSalamar`)**: [XX] commits
-- **Salazar Quiche, Darikson Bill (`darikson26`)**: [XX] commits
-- **Total de commits en AV1:** [XXX]
+- **Bernal Torres, Carlos Alberto (`CharlesBernal-Hub`)**: 8 commits
+- **Chui Kcomt, Luis Carlos (`OffEnergy`)**: 8 commits
+- **Condezo Pacheco, Fernando André (`LEFEROX`)**: 6 commits
+- **Salazar Marquina, Kevin Junior (`AresSalamar`)**: 12 commits
+- **Salazar Quiche, Darikson Bill (`darikson26`)**: 4 commits
+- **Total de commits en AV1:** 38
 
 ---
 
@@ -156,8 +160,6 @@ Nos dedicamos a desarrollar soluciones de software B2B (Business-to-Business) á
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-*[Placeholder: Fotos del equipo]*
-
 <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%;">
 <thead>
 <tr style="background-color: #f2f2f2; text-align: center;">
@@ -171,6 +173,8 @@ Nos dedicamos a desarrollar soluciones de software B2B (Business-to-Business) á
 <td align="center" valign="middle">
   <b>Bernal Torres, Carlos Alberto</b><br>
   <small>Código: U202420071</small>
+    <img src="Images/Foto-Carlitos.jpg" alt="Logo de la Universidad" width="300">
+
 </td>
 <td align="center">Ingeniería de Software</td>
 <td>Estudiante con sólidos conocimientos en el desarrollo frontend y backend. Aporta al equipo habilidades en la implementación de arquitecturas orientadas a dominio (DDD).</td>
@@ -179,6 +183,8 @@ Nos dedicamos a desarrollar soluciones de software B2B (Business-to-Business) á
 <td align="center" valign="middle">
   <b>Chui Kcomt, Luis Carlos</b><br>
   <small>Código: U20241i327</small>
+    <img src="Images/Foto-Carlos.jpg" alt="Logo de la Universidad" width="300">
+
 </td>
 <td align="center">Ingeniería de Software</td>
 <td>Estudiante responsable con conocimientos en Python, C++, HTML. Aporto calidad y buen rendimiento en trabajos en equipo asi como buen ambiente y compromiso.</td>
@@ -187,6 +193,8 @@ Nos dedicamos a desarrollar soluciones de software B2B (Business-to-Business) á
 <td align="center" valign="middle">
   <b>Condezo Pacheco, Fernando André</b><br>
   <small>Código: U202411324</small>
+    <img src="Images/Foto-Nando.jpg" alt="Logo de la Universidad" width="300">
+
 </td>
 <td align="center">Ingeniería de Software</td>
 <td>Estudiante con conocimientos en C++ y Python. Aporto colaboración con el equipo y buen ambiente.</td>
@@ -195,6 +203,8 @@ Nos dedicamos a desarrollar soluciones de software B2B (Business-to-Business) á
 <td align="center" valign="middle">
   <b>Salazar Marquina, Kevin Junior</b><br>
   <small>Código: U202417747</small>
+    <img src="Images/Foto-Kevin.jpg" alt="Logo de la Universidad" width="300">
+
 </td>
 <td align="center">Ingeniería de Software</td>
 <td>Estudiante con sólidos conocimientos en el desarrollo frontend y backend. Aporta al equipo habilidades en el uso de frameworks como Angular y Spring Boot, enfocado en asegurar la escalabilidad del sistema B2B.</td>
@@ -203,6 +213,8 @@ Nos dedicamos a desarrollar soluciones de software B2B (Business-to-Business) á
 <td align="center" valign="middle">
   <b>Salazar Quiche, Darikson Bill</b><br>
   <small>Código: U202422620</small>
+    <img src="Images/Foto-Darikson.jpg" alt="Logo de la Universidad" width="300">
+
 </td>
 <td align="center">Ingeniería de Software</td>
 <td>Estudiante proactivo, enfocado en el desarrollo de interfaces amigables (UI/UX) y en el análisis de las necesidades operativas de los negocios MYPE.</td>
@@ -400,11 +412,8 @@ Para asegurar que recolectamos información cualitativa de valor que nos permita
 
 ### 2.2.2. Registro de entrevistas
 
-Como evidencia de nuestra investigación cualitativa, hemos consolidado las entrevistas de nuestros dos segmentos en un único video editado.
+Como evidencia de nuestra investigación cualitativa, hemos adjuntado las entrevistas de nuestros compañeros.
 
-**Video de Evidencia de Entrevistas (Consolidado):**
-*   **Enlace Microsoft Stream:** [https://web.microsoftstream.com/video/fake-id-12345-aitodu](https://web.microsoftstream.com/video/fake-id-12345-aitodu)
-*   **Duración total:** 24:15 min
 
 #### Segmento 1: Tomadores de Decisión (Dueños, Administradores, Gerentes)
 
@@ -430,9 +439,9 @@ Como evidencia de nuestra investigación cualitativa, hemos consolidado las entr
 | :--- | :--- |
 | **Nombres y Apellidos** | Roberto Sánchez |
 | **ID** | E-S1-03 |
-| **Edad / Distrito** | 50 años / Los Olivos |
+| **Edad / Distrito** | 35 años / Los Olivos |
 | **Timing del video** | 08:31 - 12:45 min |
-| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Roberto.jpg" width="400" alt="Roberto Sánchez"></p> |
+| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_ Sebastian.jpg" width="400" alt="Roberto Sánchez"></p> |
 | **Resumen descriptivo** | Roberto, casado y con familia, es dueño de una distribuidora de alimentos. Es práctico y tradicional. Usa una tablet y su celular principalmente para correos electrónicos y llamadas. Admira marcas sólidas y confiables como Toyota y Makro. El problema central que relató es la falta de transparencia: no puede estar físicamente en el almacén todo el tiempo, y teme robos sistemáticos de mercadería. Validó rotundamente nuestra hipótesis al afirmar que pagaría gustoso una suscripción si el software incluye un sistema de roles y permisos estrictos donde los almaceneros no puedan borrar los registros de salida. |
 
 #### Segmento 2: Usuarios Finales (Jefes de Logística, Operarios de Almacén)
@@ -443,26 +452,26 @@ Como evidencia de nuestra investigación cualitativa, hemos consolidado las entr
 | **ID** | E-S2-01 |
 | **Edad / Distrito** | 28 años / San Juan de Miraflores |
 | **Timing del video** | 12:46 - 16:20 min |
-| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Miguel.jpg" width="400" alt="Miguel Rojas"></p> |
+| **Evidencia fotográfica** | <p align="center"><img src="Images/Raul_Delgado.jpeg" width="400" alt="Miguel Rojas"></p> |
 | **Resumen descriptivo** | Miguel vive con su pareja y es Jefe de Logística en una distribuidora. Es totalmente nativo digital, utiliza un celular Android y sus canales favoritos son TikTok y YouTube. Sigue marcas de tecnología accesible y deportivas (Samsung, Adidas). Confesó que su mayor carga operativa es hacer el inventario de fin de mes; se queda hasta la madrugada contando cajas a mano porque los papeles de despacho de la semana siempre se pierden. Pide que el sistema ideal le permite registrar salidas con la menor cantidad de clics posibles, casi como usar una red social. |
 
 | Campo | Detalle |
 | :--- | :--- |
-| **Nombres y Apellidos** | Andrea Gómez |
+| **Nombres y Apellidos** | Maria Morales |
 | **ID** | E-S2-02 |
-| **Edad / Distrito** | 32 años / Chorrillos |
+| **Edad / Distrito** | 28 años / Chorrillos |
 | **Timing del video** | 16:21 - 20:00 min |
-| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Andrea.jpg" width="400" alt="Andrea Gómez"></p> |
-| **Resumen descriptivo** | Andrea es madre soltera y operaria de almacén en una MYPE textil. Usa un teléfono Android de gama media y se comunica exclusivamente por WhatsApp y Facebook. Sigue marcas de ropa nacionales y páginas de entretenimiento. Su frustración principal es el desorden físico y lógico: pierde hasta una hora buscando un código de tela específico porque en Excel los nombres son muy confusos. Aceptaría probar AI-ToDu siempre y cuando tenga un "buscador inteligente" donde pueda escribir palabras clave (ej. "tela roja algodón") y le diga en qué repisa está. |
+| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Maria_Morales.jpg" width="400" alt="Andrea Gómez"></p> |
+| **Resumen descriptivo** | Maria es madre soltera y operaria de almacén en una MYPE textil. Usa un teléfono Android de gama media y se comunica exclusivamente por WhatsApp y Facebook. Sigue marcas de ropa nacionales y páginas de entretenimiento. Su frustración principal es el desorden físico y lógico: pierde hasta una hora buscando un código de tela específico porque en Excel los nombres son muy confusos. Aceptaría probar AI-ToDu siempre y cuando tenga un "buscador inteligente" donde pueda escribir palabras clave (ej. "tela roja algodón") y le diga en qué repisa está. |
 
 | Campo | Detalle |
 | :--- | :--- |
-| **Nombres y Apellidos** | Jorge Quispe |
+| **Nombres y Apellidos** | Diego Ramirez |
 | **ID** | E-S2-03 |
-| **Edad / Distrito** | 41 años / Ate Vitarte |
+| **Edad / Distrito** | 31 años / Ate Vitarte |
 | **Timing del video** | 20:01 - 24:15 min |
-| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Jorge.jpg" width="400" alt="Jorge Quispe"></p> |
-| **Resumen descriptivo** | Jorge es casado y encargado de despachos en un consorcio de alimentos. Tiene habilidades tecnológicas moderadas y prefiere herramientas extremadamente simples. Usa Facebook para informarse y admira marcas de consumo masivo que son transparentes (Gloria, Cristal). Su dolor principal radica en el registro de mermas y devoluciones: cuando un producto llega malogrado al cliente, el trámite en papel para ingresarlo de nuevo como "pérdida" es tan tedioso que a veces simplemente no lo anota, generando el descuadre. Desea un sistema que con dos toques le permita registrar una merma. |
+| **Evidencia fotográfica** | <p align="center"><img src="Images/Entrevista_Diego_Ramirez.jpg" width="400" alt="Jorge Quispe"></p> |
+| **Resumen descriptivo** | Diego es casado y encargado de despachos en un consorcio de alimentos. Tiene habilidades tecnológicas moderadas y prefiere herramientas extremadamente simples. Usa Facebook para informarse y admira marcas de consumo masivo que son transparentes (Gloria, Cristal). Su dolor principal radica en el registro de mermas y devoluciones: cuando un producto llega malogrado al cliente, el trámite en papel para ingresarlo de nuevo como "pérdida" es tan tedioso que a veces simplemente no lo anota, generando el descuadre. Desea un sistema que con dos toques le permita registrar una merma. |
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -487,8 +496,6 @@ Con base en la información cualitativa extraída de las 6 entrevistas registrad
 En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos obtenidos en nuestras entrevistas en artefactos de empatía y mapeo. Esto nos permite visualizar a nuestros usuarios objetivo, entender su día a día y alinear las funcionalidades de AI-ToDu con sus necesidades reales antes de escribir una sola línea de código.
 
 ### 2.3.1. User Personas
-
-*(Nota para el equipo: Las siguientes capturas fueron generadas en UXPressia).*
 
 **User Persona 1: Carlos Mendoza - El "Dueño Estresado" (Segmento 1: Tomadores de Decisión)**
 > *"Necesito saber si gano o pierdo dinero sin tener que contar cada tomate del almacén."*
@@ -519,12 +526,12 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
 ### 2.3.2. User Task Matrix
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: center; width: 100%;">
-  <tr style="background-color:#f2f2f2;">
+  <tr style="background-color:#black;">
     <th rowspan="2">Tareas (User Tasks)</th>
     <th colspan="2">User Persona 1: Carlos Mendoza (Dueño/Admin)</th>
     <th colspan="2">User Persona 2: Miguel Rojas (Almacenero)</th>
   </tr>
-  <tr style="background-color:#f2f2f2;">
+  <tr style="background-color:#black;">
     <th>Frecuencia</th>
     <th>Importancia</th>
     <th>Frecuencia</th>
@@ -582,8 +589,11 @@ En esta fase de Needfinding, hemos traducido los datos crudos y estadísticos ob
 </table>
 
 <br>
+
 **Análisis del User Task Matrix:**
+
 * **Diferencias operativas:** Las tareas de mayor frecuencia para Miguel (registrar ingresos, salidas y buscar productos físicamente) son casi nulas para Carlos. Esto valida nuestra premisa de que la interfaz móvil del almacenero debe estar hiper-optimizada para la rapidez (pocos clics), ya que lo hace decenas de veces al día. Por el contrario, la tarea más frecuente de Carlos es "Revisar el estado general", lo que justifica la creación de un Dashboard gerencial como pantalla de inicio para su rol.
+  
 * **Coincidencias en dolores:** Ambos perfiles coinciden en la alta importancia de "Elaborar el cuadre de inventario" y "Calcular mermas". Sin embargo, Miguel lo vive como una carga operativa pesada a fin de mes, mientras que Carlos lo vive como una métrica crítica de pérdida de dinero. AI-ToDu deberá automatizar esta tarea para aliviar la carga de Miguel y darle tranquilidad inmediata a Carlos.
 
 ### 2.3.3. User Journey Mapping
@@ -789,10 +799,7 @@ El Impact Mapping elaborado para AI-ToDu ilustra de manera estratégica cómo la
 
 A continuación, se presenta el Product Backlog del proyecto AI-ToDu, organizado y priorizado de acuerdo con el valor que cada User Story aporta al negocio y al funcionamiento principal del producto. La priorización no representa necesariamente el orden exacto en el que se desarrollarán técnicamente las funcionalidades, sino el nivel de importancia que tienen para validar y entregar valor al usuario.
 
-<p align="center">
-  <img src="Images/Trello-Backlog-1.png" width="800" alt="Product Backlog de AI-ToDu">
-  <br><em>URL del Product Backlog (Trello): [URL_Publico_Del_Tablero_Trello]</em>
-</p>
+
 
 | # Orden | Story ID | Título | Descripción | Story Points |
 | :---: | :---: | :--- | :--- | :---: |
@@ -857,7 +864,7 @@ Para AI-ToDu, el branding se diseñó para mostrar innovación tecnológica, con
 El diseño incluye el imagotipo y el nombre del producto “AI-ToDu” de forma clara y legible, permitiendo que la marca sea reconocida fácilmente dentro de la Landing Page, la aplicación web, los documentos del proyecto y los dispositivos móviles.
 
 <p align="center">
-  <img src="Images/Branding-Logo.png" width="400" alt="Logo de AI-ToDu">
+  <img src="Images/Branding-Logo.jpeg" width="400" alt="Logo de AI-ToDu">
 </p>
 
 **4.1.1.2. Typography**
@@ -1005,19 +1012,42 @@ La propuesta visual traduce nuestras decisiones de Arquitectura de Información 
 
 Hemos priorizado la heurística de "Diseño estético y minimalista", asegurando que el *Hero Section* contenga una propuesta de valor clara y un único *Call to Action* prominente.
 
+**Wireframes Desktop de la Landing Page**
+
 <p align="center">
-  <img src="Images/Landing-Wireframes.jpg" width="800" alt="Landing Page Wireframes Desktop y Mobile">
-  <br><em>Enlace a Figma: <a href="https://www.figma.com/design/ANY4VrfpB2hySc15nBdAhz/Sin-t%C3%ADtulo?node-id=0-1&t=k8B8SCaVRYBwmB9R-1">Ver Wireframes AI-ToDu</a></em>
+  <img src="Landing Wireframe Desktop/1.jpg" width="800" alt="Landing Wireframe Desktop 1">
 </p>
+
+<p align="center">
+  <img src="Landing Wireframe Desktop/2.png" width="800" alt="Landing Wireframe Desktop 2">
+</p>
+
+<p align="center">
+  <img src="Landing Wireframe Desktop/3.png" width="800" alt="Landing Wireframe Desktop 3">
+</p>
+
+<p align="center">
+  <img src="Landing Wireframe Desktop/4.png" width="800" alt="Landing Wireframe Desktop 4">
+</p>
+
+**Wireframes Mobile de la Landing Page**
+
+<p align="center">
+  <img src="Landing Wireframe Mobile/1_movil.png" width="300" alt="Landing Wireframe Mobile 1">
+  <img src="Landing Wireframe Mobile/2_movil.png" width="300" alt="Landing Wireframe Mobile 2">
+</p>
+<p align="center">
+  <img src="Landing Wireframe Mobile/3_movil.png" width="300" alt="Landing Wireframe Mobile 3">
+  <img src="Landing Wireframe Mobile/4_movil.png" width="300" alt="Landing Wireframe Mobile 4">
+</p>
+
+<div style="page-break-after: always"></div>
+
 
 ### 4.3.2. Landing Page Mock-up
 
 Los mock-ups integran nuestro *Design System*. Utilizamos la paleta de colores corporativa (Navy y Teal) para resaltar los botones de acción sobre fondos limpios, cumpliendo con los estándares de contraste (WCAG).
 
-<p align="center">
-  <img src="Images/Landing-Mockups.jpg" width="800" alt="Landing Page Mockups Desktop y Mobile">
-  <br><em>Enlace a Figma: <a href="https://www.figma.com/design/ANY4VrfpB2hySc15nBdAhz/Sin-t%C3%ADtulo?node-id=0-1&t=k8B8SCaVRYBwmB9R-1">Ver Mockups AI-ToDu</a></em>
-</p>
 
 <div style="page-break-after: always"></div>
 
@@ -1060,7 +1090,7 @@ Los wireflows representan la secuencia de pantallas y acciones que debe seguir c
 Los mock-ups presentan la propuesta visual final. Utilizan un menú lateral de navegación, tarjetas de resumen y tablas. Los estados del inventario se diferencian como “Óptimo”, “Alerta” y “Quiebre”.
 
 <p align="center">
-  <img src="Images/Mockups-WebApp.jpg" width="800" alt="Mockups Web App AI-ToDu">
+  <img src="Images/mockup_cete.jpg" width="800" alt="Mockups de la aplicación web CeTe">
 </p>
 
 ### 4.4.4. Web Applications User Flow Diagrams
@@ -1071,17 +1101,36 @@ Las representaciones de decisiones complementan la secuencia de pantallas al inc
 * Un producto en cuarentena no puede venderse ni despacharse.
 * Las alternativas incluyen datos incompletos, SKU inexistente, stock insuficiente y errores de guardado.
 
-<p align="center">
-  <img src="Images/UserFlow-Diagrams.jpg" width="800" alt="User Flow Diagrams">
-</p>
+**Leyenda:**
+
+![Leyenda del User Flow](Images/imagenpiero1.png)
+
+**Flujo de Usuario:**
+Empieza con el usuario ingresando a la página de inicio de CeTe Workspace. Aquí determina si es "Administrador" o "Colaborador".
+
+![Flujo de Usuario Login](Images/imagenpiero2.png)
+
+**Flujo de Administrador:**
+El usuario Administrador puede acceder a su perfil, visualizar el panel de control de la MYPE, asignar tareas a sus colaboradores, y acceder a las herramientas de reportes y administración.
+
+![Flujo de Administrador](Images/imagenpiero3.png)
+
+**Flujo de Colaborador:**
+El usuario Colaborador puede acceder a su perfil, ver los proyectos o tareas asignadas, registrar su avance diario, y acceder a las herramientas operativas de su espacio de trabajo.
+
+![Flujo de Colaborador](Images/imagenpiero4.png)
+
+**Vista general del flujo de usuario:**
+
+![Vista General del User Flow](Images/imagenpiero5.png)
+
+<div style="page-break-after: always"></div>
 
 ### 4.5. Web Applications Prototyping
 
 El prototipo de AI-ToDu reúne las interfaces y conexiones de navegación para explorar la experiencia de usuario. Su evaluación comprueba la continuidad de las interacciones en computadoras y dispositivos móviles, simulando la experiencia de uso ágil.
 
-<p align="center">
-  <img src="Images/Prototype-Connections.jpg" width="800" alt="Prototipo Interactivo">
-</p>
+![Captura Prototipo Figma](Images/imagenpiero6.png)
 
 <div style="page-break-after: always"></div>
 
@@ -1108,10 +1157,48 @@ A través del EventStorming a nivel de diseño, se identificaron las interdepend
 | **Warehouse:** Low Stock Triggered | **Notifications:** Send Alert | El stock bajo genera una alerta para el usuario autorizado. |
 | **Sales:** Transaction Created | **Warehouse:** Dispatch Merch. | Una venta confirmada solicita la salida de los productos. |
 
-<p align="center">
-  <img src="Images/DesignLevel-EventStorming.jpg" width="800" alt="Design-Level EventStorming">
-  <br><em>Nota. Flujo de comandos, agregados y políticas de AI-ToDu.</em>
-</p>
+
+```mermaid
+flowchart LR
+    %% Paleta de colores estándar de Event Storming
+    classDef command fill:#87b4e5,stroke:#2b578c,color:#000,rx:5px,ry:5px
+    classDef aggregate fill:#f9e076,stroke:#a68910,color:#000,rx:5px,ry:5px
+    classDef event fill:#f4b163,stroke:#c46c0b,color:#000,rx:5px,ry:5px
+    classDef query fill:#a5d790,stroke:#387c1c,color:#000,rx:5px,ry:5px
+    classDef policy fill:#d5a8e3,stroke:#7c3d91,color:#000,rx:5px,ry:5px
+
+    subgraph Warehouse["Warehouse Management (Core Domain)"]
+        direction LR
+        W_Cmd1["<b>Command</b><br/>Register Stock Input"]:::command
+        W_Agg1["<b>Aggregate</b><br/>InventoryItem"]:::aggregate
+        W_Evt1["<b>Domain Event</b><br/>Stock Added"]:::event
+        W_Qry1["<b>Query / Read Model</b><br/>Inventory View"]:::query
+
+        W_Cmd1 -->|"Invoca"| W_Agg1 -->|"Emite"| W_Evt1 -.->|"Actualiza"| W_Qry1
+
+        W_Cmd2["<b>Command</b><br/>Decrease Stock"]:::command
+        W_Agg2["<b>Aggregate</b><br/>InventoryItem"]:::aggregate
+        W_Evt2["<b>Domain Event</b><br/>Stock Decreased"]:::event
+
+        W_Cmd2 -->|"Invoca"| W_Agg2 -->|"Emite"| W_Evt2
+    end
+
+    subgraph Sales["Sales & Billing (Bounded Context)"]
+        direction LR
+        S_Cmd1["<b>Command</b><br/>Create Sale"]:::command
+        S_Agg1["<b>Aggregate</b><br/>Sale"]:::aggregate
+        S_Evt1["<b>Domain Event</b><br/>Sale Confirmed"]:::event
+        S_Qry1["<b>Query / Read Model</b><br/>Sales Dashboard"]:::query
+
+        S_Cmd1 -->|"Invoca"| S_Agg1 -->|"Emite"| S_Evt1 -.->|"Actualiza"| S_Qry1
+    end
+
+    %% Regla de negocio cruzada (Policy / Process Manager)
+    Policy["<b>Policy</b><br/>Deduct Stock on Sale"]:::policy
+    
+    S_Evt1 -.->|"Desencadena"| Policy
+    Policy -->|"Ejecuta automáticamente"| W_Cmd2
+```
 
 ### 4.6.2. Software Architecture Context Diagram
 
